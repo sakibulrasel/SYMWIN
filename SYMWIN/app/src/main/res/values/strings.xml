@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">SYMWIN</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_main">Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="username">Your User Name</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_username">User Name</string>
+    <string name="login">Login</string>
+    <string name="submit">Submit</string>
+    <string name="name">Name</string>
+    <string name="details">Details</string>
+    <string name="hint_number">Enter Your Contact Number</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome">Welcome</string>
+    <string name="unsold">Unsold</string>
+    <string name="sold">Sold</string>
+    <string name="lifting">Lifting</string>
+    <string name="redeem">Redeem Points</string>
+    <string name="redeem_points">500</string>
+    <string name="feedback_category">Feedback Category</string>
+    <string name="feedback">Feedback</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="menu_dashboard">Dashboard(Stock , Sales Info)</string>
+    <string name="menu_imei">Available IMEI list with activation status</string>
+    <string name="menu_sales">Manual sales declaration</string>
+    <string name="menu_redeem">Redeem your points</string>
+    <string name="menu_redeem_his">Redeem history</string>
+    <string name="menu_notification">Notifications for campaigns and new products</string>
+    <string name="menu_logout">Logout</string>
+    <string name="modelName">Model Name</string>
+    <string name="quantity">Quantity</string>
+    <string name="sales">Sales Details</string>
+    <string name="liftings">Lifting Details</string>
+    <string name="model_hint">Search By Model</string>
+    <string name="imei_hint">Search By IMEI1</string>
+    <string name="sale_details">Sale Details</string>
+    <string name="title_activity_sales__data_by_day">Sales_Data_by_dayActivity</string>
+
+
+    <string name="day_prompt">Choose Search Day</string>
+    <string name="type_prompt">Choose Search Day</string>
+    <string name="title_activity_product_detail">ProductDetailActivity</string>
+    <string name="title_activity_unsold_details">UnsoldDetailsActivity</string>
+    <string name="title_activity_unsold_product">UnsoldProductActivity</string>
+    <string name="title_activity_lifting">LiftingActivity</string>
+    <string name="title_activity_lifting_details">LiftingDetailsActivity</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+    <string-array name="day_arrays">
+        <item>Select Day Range</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+        <item>60</item>
+        <item>61</item>
+        <item>62</item>
+        <item>63</item>
+        <item>64</item>
+        <item>65</item>
+        <item>66</item>
+        <item>67</item>
+        <item>68</item>
+        <item>69</item>
+        <item>70</item>
+        <item>71</item>
+        <item>72</item>
+        <item>73</item>
+        <item>74</item>
+        <item>75</item>
+        <item>76</item>
+        <item>77</item>
+        <item>78</item>
+        <item>79</item>
+        <item>80</item>
+        <item>81</item>
+        <item>82</item>
+        <item>83</item>
+        <item>84</item>
+        <item>85</item>
+        <item>86</item>
+        <item>87</item>
+        <item>88</item>
+        <item>89</item>
+        <item>90</item>
+
+    </string-array>
+</resources>

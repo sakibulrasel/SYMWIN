@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.edisonit.symwin">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar">
+        <activity
+            android:name=".activity.FeedbackActivity"
+            android:label="@string/title_activity_feedback"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/NoActionBar"></activity>
+        <activity
+            android:name=".activity.LiftingDetailsActivity"
+            android:label="@string/title_activity_lifting_details"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName=".activity.LiftingActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".activity.LiftingActivity"
+            android:label="@string/title_activity_lifting"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".activity.UnsoldProductActivity"
+            android:label="@string/title_activity_unsold_product"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName=".activity.UnsoldDetailsActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".activity.UnsoldDetailsActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_unsold_details"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".activity.ProductDetailActivity"
+            android:label="@string/title_activity_product_detail"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName=".activity.Sales_Data_by_dayActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".activity.Sales_Data_by_dayActivity"
+            android:label="@string/title_activity_sales__data_by_day"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/title_main"
+            android:theme="@style/NoActionBar" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

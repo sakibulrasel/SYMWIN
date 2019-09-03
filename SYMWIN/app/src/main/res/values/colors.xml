@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorSplash">#F10152</color>
+    <color name="colorDarkSplash">#CF034C</color>
+    <color name="red">#C70606</color>
+    <color name="colorlogin_background">#F9F9F9</color>
+    <color name="colorlogin_text">#CE0C49</color>
+    <color name="gray">#A8A8A8</color>
+    <color name="black">#000000</color>
+    <color name="hint_black">#A09E9E</color>
+    <color name="spinner_category">#2196F3</color>
+    <color name="dashboard_black">#8D8D8D</color>
+
+
+
+
+</resources>

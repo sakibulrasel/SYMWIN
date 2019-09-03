@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/colorlogin_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/welcome_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/welcome"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.174"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/welcome_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="Demo"
+            android:textAlignment="center"
+            android:textColor="@color/colorSplash"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/redeem_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="43dp"
+            android:text="@string/redeem"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.796"
+            app:layout_constraintStart_toEndOf="@+id/welcome_textview"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/redeem_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="73dp"
+            android:text="@string/redeem_points"
+            android:textColor="@color/colorSplash"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/redeem_textview" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="146dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="56dp"
+        android:background="@color/colorlogin_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:background="@color/colorlogin_background"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/sold_layout"
+                        android:layout_width="175dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/image_boarder"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <ImageView
+                            android:id="@+id/sold_image"
+                            android:layout_width="120dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="5dp"
+                            android:src="@drawable/sales"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:srcCompat="@tools:sample/avatars" />
+
+                        <TextView
+                            android:id="@+id/sold_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="58dp"
+                            android:text="@string/sold"
+                            android:textColor="@color/dashboard_black"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/sold_image" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/unsold_layout"
+                        android:layout_width="175dp"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="@drawable/image_boarder"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/sold_layout"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/unsold_image"
+                            android:layout_width="120dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="5dp"
+                            android:src="@drawable/unsold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:srcCompat="@tools:sample/avatars" />
+
+                        <TextView
+                            android:id="@+id/unsold_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="58dp"
+                            android:text="@string/unsold"
+                            android:textColor="@color/dashboard_black"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/unsold_image" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/lifting_layout"
+                        android:layout_width="175dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/image_boarder"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sold_layout">
+
+
+                        <ImageView
+                            android:id="@+id/lifting_image"
+                            android:layout_width="120dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="5dp"
+                            android:src="@drawable/lifting"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:srcCompat="@tools:sample/avatars" />
+
+                        <TextView
+                            android:id="@+id/lifting_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="58dp"
+                            android:text="@string/lifting"
+                            android:textColor="@color/dashboard_black"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/lifting_image" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:id="@+id/fourth_layout"-->
+<!--                        android:layout_width="175dp"-->
+<!--                        android:layout_height="130dp"-->
+<!--                        android:background="@drawable/image_boarder"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toBottomOf="@+id/lifting_layout">-->
+
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/liftings_image"-->
+<!--                            android:layout_width="120dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:layout_marginStart="5dp"-->
+<!--                            android:layout_marginTop="15dp"-->
+<!--                            android:layout_marginEnd="5dp"-->
+<!--                            android:src="@drawable/usrusr"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            tools:srcCompat="@tools:sample/avatars" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/liftings_text_view"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="60dp"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:layout_marginEnd="58dp"-->
+<!--                            android:text="@string/lifting"-->
+<!--                            android:textColor="@color/dashboard_black"-->
+<!--                            android:textSize="18sp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toBottomOf="@+id/liftings_image" />-->
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:id="@+id/fourths_layout"-->
+<!--                        android:layout_width="175dp"-->
+<!--                        android:layout_height="130dp"-->
+<!--                        android:background="@drawable/image_boarder"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toBottomOf="@+id/fourth_layout">-->
+
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/liftingss_image"-->
+<!--                            android:layout_width="120dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:layout_marginStart="5dp"-->
+<!--                            android:layout_marginTop="15dp"-->
+<!--                            android:layout_marginEnd="5dp"-->
+<!--                            android:src="@drawable/usrusr"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            tools:srcCompat="@tools:sample/avatars" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/liftingss_text_view"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="60dp"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:layout_marginEnd="58dp"-->
+<!--                            android:text="@string/lifting"-->
+<!--                            android:textColor="@color/dashboard_black"-->
+<!--                            android:textSize="18sp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toBottomOf="@+id/liftingss_image" />-->
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:id="@+id/fourthss_layout"-->
+<!--                        android:layout_width="175dp"-->
+<!--                        android:layout_height="130dp"-->
+<!--                        android:background="@drawable/image_boarder"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toBottomOf="@+id/fourths_layout">-->
+
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/liftinss_image"-->
+<!--                            android:layout_width="120dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:layout_marginStart="5dp"-->
+<!--                            android:layout_marginTop="15dp"-->
+<!--                            android:layout_marginEnd="5dp"-->
+<!--                            android:src="@drawable/usrusr"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            tools:srcCompat="@tools:sample/avatars" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/liftigss_text_view"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="60dp"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:layout_marginEnd="58dp"-->
+<!--                            android:text="@string/lifting"-->
+<!--                            android:textColor="@color/dashboard_black"-->
+<!--                            android:textSize="18sp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toBottomOf="@+id/liftinss_image" />-->
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

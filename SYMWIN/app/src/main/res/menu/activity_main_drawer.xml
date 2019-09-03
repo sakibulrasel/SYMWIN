@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:title="@string/menu_dashboard" />
+        <item
+            android:id="@+id/nav_imei"
+            android:title="@string/menu_imei" />
+        <item
+            android:id="@+id/nav_sales"
+            android:title="@string/menu_sales" />
+        <item
+            android:id="@+id/nav_redeem"
+            android:title="@string/menu_redeem" />
+        <item
+            android:id="@+id/nav_redeem_his"
+            android:title="@string/menu_redeem_his" />
+        <item
+            android:id="@+id/nav_notification"
+            android:title="@string/menu_notification" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="@string/menu_logout" />
+    </group>
+
+</menu>
